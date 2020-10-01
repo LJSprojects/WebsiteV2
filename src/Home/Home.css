@@ -1,0 +1,91 @@
+#homeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 300px);
+    background-color:rgba(184,197,222, 0.85);
+    overflow: auto;
+}
+
+#topper{
+    width: 80%;
+    margin-top: 4%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#historyTopper{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5%;
+    width: 80%;
+}
+
+#paragraph{
+    margin-top: 1%;
+    width: 75%;
+    font-size: 21px;
+    font-weight: bold;
+    
+}
+
+#history{
+    margin-top: 2%;
+    width: 75%;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#services{
+    margin-top: 3%;
+    width: 80%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#servicesList{
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+li{
+    line-height: 125%;
+}
+
+@media only screen and (max-width: 840px) {
+    #homeContent{
+      width: 100%;
+      height: calc(100% - 220px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #homeContent{
+        height: calc(100% - 180px);
+    }
+    #topper{
+        width: 90%;
+        font-size: 23px;
+    }
+      #historyTopper{
+        font-size: 19px;
+        width: 90%;
+    }
+    
+    #paragraph{
+        width: 85%;
+        font-size: 16px;
+        
+    }
+    
+    #history{
+        width: 85%;
+        font-size: 16px;
+    }
+    
+    #services{
+        width: 90%;
+        font-size: 19px;
+    }
+}

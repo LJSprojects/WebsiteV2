@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+#allContent{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+    font-family: Lucida Bright,Georgia,serif; 
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#leftCol{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d5d5d5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+#logo{
+    width: 90%;
+    margin-top: -45px;
+    margin-bottom: -25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.section{
+  margin-bottom: 11%;
+  font-size: 18px;
+}
+
+
+
+#description{
+  font-weight: bold;
+}
+
+
+
+#address{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#phone{
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#mobileButtons{
+  display: none;
+}
+
+
+
+/* #contact{
+  width: 80%;
+}
+
+#schedule{
+  width: 80%;
+} */
+
+#contactButton{
+  color: #0a42cf;
+  border: 2px solid #0a42cf;
+}
+#contactButton:hover{
+  background-color: #a6deff !important;
+}
+
+#scheduleButton{
+  color: #0f8a32;
+  border: 2px solid #0f8a32;
+}
+#scheduleButton:hover{
+  background-color: #8cff9d !important;
+}
+
+.sideButton{
+  background-color: white !important;
+  border-radius: 15px !important;
+  box-shadow: 4px 4px 2px grey;
+  width: 100%;
+}
+
+#contactInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#buttons{
+  width: 80%;
+}
+
+
+
+#background{
+  position: absolute;
+  left: 300px;
+  height: 100%;
+  width: calc(100% - 300px);
+  z-index: -2;
+}
+
+@media only screen and (max-width: 840px) {
+  #leftCol{
+    flex-direction: column;
+    width: 100%;
+    padding: 0% 10%;
+    height: 220px;
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  #logo{
+    width: 280px;
+    margin-top: -65px;
+    margin-bottom: -65px;
+  }
+
+  #allContent{
+    flex-direction: column;
+  }
+
+  #mobileButtons{
+    display: inline-block;
+    width: 220px;
+  }
+
+  #buttons{
+    display: none;
+  }
+
+  .section{
+    margin-bottom: 5%;
+  }
+
+  #contactInfo{
+    margin-top: 30px;
+  }
+
+  #background{
+    top: 220px;
+    left: 0px;
+    height: calc(100% - 220px);
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #leftCol{
+    padding: 0% 2%;
+    height: 180px;
+  }
+  #logo{
+    width: 42%;
+    margin-top: -5%;
+    margin-bottom: -7%;
+  }
+
+  #mobileButtons{
+    width: 40%;
+  }
+
+  .sideButton{
+    font-size: 14px;
+  }
+
+  .section{
+    margin-bottom: 4%;
+    font-size: 14px;
+  }
+
+  #background{
+    top: 180px;
+    height: calc(100% - 180px);
+  }
+
+  #contactInfo{
+    margin-left: 4%;
+    margin-top: 3%;
+    width: 50%;
   }
 }
