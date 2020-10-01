@@ -47,7 +47,7 @@ function App() {
                         </div>
                     </div>
                     <div id="phone" className="section" x-ms-format-detection="none">
-                        (847)915<span class="notel"></span>-9200
+                        (847)915<span></span>-9200
                     </div>
                     <div id="email" className="section">
                         INFO@LJSProjects.com
